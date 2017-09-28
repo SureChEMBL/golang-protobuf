@@ -1,0 +1,8 @@
+#!/usr/bin/make -f
+
+# Uncomment this to turn on verbose mode.
+#export DH_VERBOSE=1
+export DH_GOLANG_INSTALL_EXTRA := proto/testdata protoc-gen-go/testdata
+
+%:
+	dh $@ --buildsystem=golang --with=golang

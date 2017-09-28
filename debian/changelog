@@ -1,0 +1,113 @@
+golang-goprotobuf (0.0~git20170808.0.1909bc2-1) unstable; urgency=medium
+
+  [ Alexandre Viau ]
+  * Team upload.
+  * New upstream version.
+  * Testsuite: autopkgtest-pkg-go.
+  * Bump Standards-Version to 4.0.0.
+  * Refresh patches.
+  * Depend on golang-golang-x-sync-dev.
+  * Remove unused statically-linked-binary lintian override.
+
+  [ Martín Ferrari ]
+  * Update dh-golang dependency.
+
+ -- Alexandre Viau <aviau@debian.org>  Sun, 13 Aug 2017 01:34:01 -0400
+
+golang-goprotobuf (0.0~git20161116.0.224aaba-3) unstable; urgency=medium
+
+  * Fix typo in patch that made it useless, and also patch out decode_test.go.
+
+ -- Martín Ferrari <tincho@debian.org>  Sat, 19 Nov 2016 15:50:44 +0100
+
+golang-goprotobuf (0.0~git20161116.0.224aaba-2) unstable; urgency=medium
+
+  * Disable some tests that fail to compile in gccgo (differences in the
+    testing library).
+
+ -- Martín Ferrari <tincho@debian.org>  Sat, 19 Nov 2016 05:37:50 +0000
+
+golang-goprotobuf (0.0~git20161116.0.224aaba-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Add missing testdata dirs.
+
+ -- Martín Ferrari <tincho@debian.org>  Sat, 19 Nov 2016 04:45:11 +0000
+
+golang-goprotobuf (0.0~git20160815.0.7390af9-3) unstable; urgency=medium
+
+  * Include patch that works around a bug in gccgo, thanks to Michael
+    Hudson-Doyle.
+
+ -- Martín Ferrari <tincho@debian.org>  Fri, 30 Sep 2016 02:06:11 +0200
+
+golang-goprotobuf (0.0~git20160815.0.7390af9-2) unstable; urgency=medium
+
+  * Remove Tonnerre LOMBARD from Uploaders per MIA-team request.
+    Closes: #836488.
+  * Switch to golang-any for better platform support.
+  * Add a lintian override for static binaries, as lintian does not seem to
+    realise this is a golang package.
+
+ -- Martín Ferrari <tincho@debian.org>  Sun, 25 Sep 2016 17:31:57 +0000
+
+golang-goprotobuf (0.0~git20160815.0.7390af9-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Martín Ferrari ]
+  * Require dh-golang 1.10, for XS-Go-Import-Path.
+
+  [ Dmitry Smirnov ]
+  * New upstream snapshot.
+
+ -- Dmitry Smirnov <onlyjob@debian.org>  Sun, 21 Aug 2016 22:40:06 +1000
+
+golang-goprotobuf (0.0~git20160425.7cc19b7-1) unstable; urgency=medium
+
+  * New upstream snapshot.
+  * debian/control: add myself to Uploaders, update Standards-Version with no
+    changes, and remove unneeded dependency on gogo-protobuf.
+  * Move to use XS-Go-Import-Path, and update various URIs.
+
+ -- Martín Ferrari <tincho@debian.org>  Sun, 01 May 2016 06:32:32 +0100
+
+golang-goprotobuf (0.0~git20160330-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Tonnerre LOMBARD ]
+  * Fix compatibility symlink target (protobuf -> goprotobuf)
+
+  [ Tianon Gravi ]
+  * Switch to https in Vcs-Browser
+
+  [ Dmitry Smirnov ]
+  * New upstream snapshot.
+  * Standards-Version: 3.9.7.
+  * Removed "protobuf-source-files" patch;
+    missing .proto files provided by "gogo-protobuf".
+  * Build-Depends += "golang-github-gogo-protobuf-dev".
+  * copyright: use actual text of the license.
+  * Added "gbp.conf", "TODO.Debian", "watch".
+
+ -- Dmitry Smirnov <onlyjob@debian.org>  Fri, 01 Apr 2016 13:31:58 +1100
+
+golang-goprotobuf (0.0~git20150526-2) unstable; urgency=medium
+
+  * Add compatibility symlink to not break non-updated rdeps
+
+ -- Michael Stapelberg <stapelberg@debian.org>  Sat, 27 Jun 2015 12:46:45 +0200
+
+golang-goprotobuf (0.0~git20150526-1) unstable; urgency=low
+
+  * New upstream release.
+  * Bump Standards-Version to 3.9.6 (no changes necessary).
+
+ -- Michael Stapelberg <stapelberg@debian.org>  Sat, 13 Jun 2015 16:25:36 +0200
+
+golang-goprotobuf (0.0~git20130901-1) unstable; urgency=low
+
+  * Initial release. Closes: #722975
+
+ -- Tonnerre Lombard <tonnerre@ancient-solutions.com>  Sun, 01 Sep 2013 02:44:09 +0200

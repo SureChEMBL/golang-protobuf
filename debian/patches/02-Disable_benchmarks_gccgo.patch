@@ -1,0 +1,25 @@
+The testing library in gccgo-6 does not provide the Run method, so I am
+disabling this testfile altogether.
+
+--- a/proto/decode_test.go
++++ b/proto/decode_test.go
+@@ -31,6 +31,8 @@
+ 
+ // +build go1.7
+ 
++// +build !gccgo
++
+ package proto_test
+ 
+ import (
+--- a/proto/encode_test.go
++++ b/proto/encode_test.go
+@@ -31,6 +31,8 @@
+ 
+ // +build go1.7
+ 
++// +build !gccgo
++
+ package proto_test
+ 
+ import (
